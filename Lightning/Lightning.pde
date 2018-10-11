@@ -14,11 +14,14 @@ void setup()
   startY = 150;
   endX = 0;
   endY = 150;
-  strokeWeight(1);
+  strokeWeight(10);
   background(0, 0, 50.2);
 }
 void draw()
 { 
+  fill(0, 0, 50.2,10);
+  rect(-100,-100,width+300,height+500);
+  
   stroke(random(255),random(255),random(255),random(255));
   while(endX < width){
    endX = startX + (int)(Math.random()*9);
